@@ -11,15 +11,24 @@
       window.googletag = window.googletag || { cmd: [] }
       googletag.cmd.push(function () {
         googletag
-          .defineSlot('/225677396/storm_content_T_970250', [970, 250], 'header-ads')
+          .defineSlot(
+            '/225677396/storm_house_T_970250',
+            [
+              [970, 90],
+              [728, 90],
+              [336, 280],
+              [300, 250],
+              [970, 250]
+            ],
+            'header-ads'
+          )
           .addService(googletag.companionAds())
           .addService(googletag.pubads())
 
         googletag
           .defineSlot(
-            '/225677396/storm_content_M_336280',
+            '/225677396/storm_house_M01_336280',
             [
-              [1, 1],
               [300, 250],
               [336, 280]
             ],
@@ -30,13 +39,12 @@
 
         googletag
           .defineSlot(
-            '/225677396/storm_content_M02_72890',
+            '/225677396/storm_house_M01_72890',
             [
-              [300, 250],
               [320, 100],
               [336, 280],
-              [728, 90],
-              [300, 100]
+              [300, 250],
+              [728, 90]
             ],
             'article-ads'
           )
@@ -45,9 +53,8 @@
 
         googletag
           .defineSlot(
-            '/225677396/storm_content_M5_336280',
+            '/225677396/storm_house_M02_336280',
             [
-              [1, 1],
               [300, 250],
               [336, 280]
             ],
@@ -56,8 +63,6 @@
           .addService(googletag.companionAds())
           .addService(googletag.pubads())
         googletag.pubads().enableSingleRequest()
-        googletag.pubads().enableVideoAds()
-        googletag.companionAds().setRefreshUnfilledSlots(true)
         googletag.enableServices()
       })
     </script>
